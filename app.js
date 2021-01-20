@@ -33,7 +33,6 @@ app.get('/movie', (req, res) => {
       movie.genre.toLowerCase().includes(genre.toLowerCase()));
   }
 
-
   if (country) {
     results = results.filter(movie =>
       movie.country.toLowerCase().includes(country.toLowerCase()));
